@@ -4,10 +4,11 @@ import { SwiperOptions } from 'swiper';
 import { SwiperComponent } from 'swiper/angular';
 
 interface Customer {
-  title: string;
-  date: Date;
-  text: string;
-  image: string;
+  id: number
+  title: string
+  date: Date
+  text: string
+  image: string
 }
 
 @Component({
@@ -29,6 +30,7 @@ export class CustomersComponent {
 
   customers: Customer[] = [
     {
+      id: 1,
       title: 'Oasis provides a robust synopsis of our service statuses',
       date: new Date(2022, 1, 1),
       text: `Iterative approaches to corporate strategy foster collaborative
@@ -36,6 +38,7 @@ export class CustomersComponent {
       image: 'assets/images/customer-1.png',
     },
     {
+      id: 2,
       title: 'Oasis has brought clarity to our architecture',
       date: new Date(2022, 3, 1),
       text: `Iterative approaches to corporate strategy foster collaborative

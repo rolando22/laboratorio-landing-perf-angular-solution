@@ -13,7 +13,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabledBlocking',
     preloadingStrategy: PreloadAllModules,
-  })],
+})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
